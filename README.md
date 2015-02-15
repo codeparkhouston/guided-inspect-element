@@ -38,9 +38,11 @@ We've been changing HTML for this Instagram page.  HTML codes the content and st
 
 1. Right click on the username and choose "Inpect Element" again or navigate to that part of the code.
 2. Look to the right for code that says
+        ```css
         .upuiUsername, .upuiUsername a, .upuiUsername a:visited {
             color: #111;
         }
+        ```
 with a color box next to it.
 3. Click on the color box, and a color selector will pop up.  Pick any color you like.
 
