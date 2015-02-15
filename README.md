@@ -37,6 +37,7 @@ We've been changing HTML for this Instagram page.  HTML codes the content and st
 ### Username color
 
 1. Right click on the username and choose "Inpect Element" again or navigate to that part of the code.
+
 2. Look to the right for code that says
 ```css
 .upuiUsername, .upuiUsername a, .upuiUsername a:visited {
@@ -44,21 +45,25 @@ We've been changing HTML for this Instagram page.  HTML codes the content and st
 }
 ```
 with a color box next to it.
+
 3. Click on the color box, and a color selector will pop up.  Pick any color you like.
 
 ### Change the big header background color
 
 1. Right click on the dark gray part of the header.
+
 2. Look to the right for code that says
 ```css
 element.style {
 }
 ```
+
 3. Add
 ```css
         background: linear-gradient(red,blue);
 ```
 inside the brackets.
+
 4. The background is now crazy.  Click on the color boxes for the red and blue and change them to your liking.
 
 ### Rotate a picture
