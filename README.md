@@ -28,7 +28,9 @@ Let's see what we can do.
 2. Choose "Inspect Element" from the menu as before.  The code for this header will be highlighted.
 3. Click and drag this code to some other place in the code.
 
-Pretty neat right? We've been changing HTML for this Instagram page.  HTML codes the content and structure of a webpage.
+### HTML
+
+We've been changing HTML for this Instagram page.  HTML codes the content and structure of a webpage.
 
 # Style
 
@@ -38,7 +40,7 @@ Pretty neat right? We've been changing HTML for this Instagram page.  HTML codes
 2. Look to the right for code that says
 ```css
 .upuiUsername, .upuiUsername a, .upuiUsername a:visited {
-       color: #111;
+        color: #111;
 }
 ```
 with a color box next to it.
@@ -59,9 +61,95 @@ element.style {
 inside the brackets.
 4. The background is now crazy.  Click on the color boxes for the red and blue and change them to your liking.
 
+### Rotate a picture
+
+1. Click on a picture.
+2. Right click on the picture and choose "Inspect Element."
+3. Look to the right for the code that says
+```css
+element.style {
+        background-image: url(http://photos-d.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10958626_808888062520027_914160921_n.jpg);
+}
+```
+4. Click on the second } and add
+```css
+-webkit-transform: rotate(120deg);
+```
+5. Experiment with the number of degrees.
+
+### Background image
+1. Right click on the phone and "Inspect Element."
+2. Look to the right for the code:
+```css
+.page-home .home-phones{
+        background: url(//instagramstatic-a.akamaihd.net/bluebar/c4b4b0a/images/homepage/home-phones.png) no-repeat 0 80px; */
+...
+```
+3. Click on the checkbox next to ```background:...``` to uncheck it.
+
+### Fading images
+1. Right click and "Inspect Element" on the changing images.
+2. We can now see the code. How are the images transitioning like a slide show?
+
+### CSS
+We just got to play around with how content looks in a webpage.  This is called, the 'style' and is often coded by something called CSS.
+
+# More Control
+
+### Deleting the phone pictures
+1. Make sure the code
+```html
+<div id="iphone-overlay">
+```
+is selected.
+2. Delete.
+
+### Hiding the phone pictures
+1. Refresh the page.
+2. Click on the "Console" tab where the code is.
+3. Type
+```javascript
+$('#iphone-overlay').hide();
+```
+and press ```Enter``` to run the code!
+4. Type
+```javascript
+$('#iphone-overlay').show();
+```
+and press ```Enter```.
+
+### Adding borders on everything
+1. Type
+```javascript
+$('*').css({border: '1px solid #000'});
+```
+and press ```Enter```.
+
+### Animating and moving the pictures
+1. Try
+```javascript
+$('#iphone-overlay').animate({marginLeft: '500px'}, 1000);
+```
+and press ```Enter```.
+
+2. And
+```javascript
+$('#iphone-overlay').animate({marginLeft: '0px'}, 1000);
+```
+
+3. Let's move each picture
+```javascript
+var images = $('#iphone-overlay img');
+for(i = 0; i < images.length; i ++){
+        $(images[i]).animate({marginLeft: i*100},1000 * i);
+}
+```
+
+### JavaScript
+
+We were able to manipulate things on our page using a language called JavaScript.  In this case, we use something called jQuery to help us select different parts of our page and change them.
 
 
+# Inspiration
 
-#### Inspiration
-
-http://codepen.io/
+For examples of neat things and code that made them, check out http://codepen.io/.
