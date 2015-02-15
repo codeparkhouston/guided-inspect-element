@@ -140,4 +140,4 @@ We were able to manipulate things on our page using a language called JavaScript
 
 # Inspiration
 
-For examples of neat things and code that made them, check out http://codepen.io/.
+For examples of cool things and the code that made them, check out http://codepen.io/.
