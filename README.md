@@ -129,8 +129,8 @@ and press ```Enter```.
 3. Let's move each picture
 
         var images = $('#iphone-overlay img');
-        for(i = 0; i < images.length; i ++){
-            $(images[i]).animate({marginLeft: i*100},1000 * i);
+        for ( count = 0; count < images.length; count ++ ){
+            $(images[count]).animate( { marginLeft: count*100 }, 1000 * count);
         }
 
 ### JavaScript
