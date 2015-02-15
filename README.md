@@ -97,7 +97,7 @@ We just got to play around with how content looks in a webpage.  This is called,
 
         <div id="iphone-overlay">
 is selected.
-2. Delete.
+2. Press "Delete".
 
 ### Hiding the phone pictures
 1. Refresh the page.
