@@ -173,7 +173,7 @@ and press ```Enter```.
 ### C. Rotating things
 1. Copy and paste the code from [http://bit.do/rotate-1](http://bit.do/rotate-1) into the console.
 
-    This is the code;
+    This is the code:
 
         var rotation = 0;
 
