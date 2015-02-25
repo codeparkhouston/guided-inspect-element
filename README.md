@@ -1,23 +1,25 @@
+You can also see this guide online at: [https://github.com/codeparkhouston/guided-inspect-element](https://github.com/codeparkhouston/guided-inspect-element)
+
 # Peeking into the code
 
 Sometimes it really helps to open something up to see what's going on.  The "Inspect Element" tool lets us do just that for webpages!  It's like opening the hood of a car, working backwards on a math problem, or reading a recipe for your favorite dessert.
 
 **Let's try it on your school's webpage!**
 
-Go to: [http://www.houstonisd.org/Domain/22556](http://www.houstonisd.org/Domain/22556)
+Go to: [http://www.houstonisd.org/milby](http://www.houstonisd.org/milby)
 
 # I. Content
 
 The code we are changing in the section will be in the box on the left.
 
-### Change the name of your school!
+### A. Change the name of your school!
 
 1. Right click on "Charles H. Milby High School" at the top.
 2. Choose "Inspect Element" from the menu.  A window with code will show on the bottom or on the side.
 3. The highlighted line is the code for the heading.  Change the text that says "Charles H. Milby High School" to anything you want!
 
 
-### Move the header around
+### B. Move the header around
 
 1. Right click on the side of the gold header up top.
 2. Choose "Inspect Element" from the menu as before.  The code for this header will be highlighted.
@@ -26,7 +28,7 @@ The code we are changing in the section will be in the box on the left.
         <div id="hp-page-outer"></div>
 
 
-### Change the slider picture
+### C. Change the slider picture
 
 1. Right click on the picture in the center.
 2. This will highlight code that says:
@@ -57,14 +59,14 @@ The code we are changing in the section will be in the box on the left.
 
 Phew. That was quite a bit of effort.  We'll see how to do this way quicker in a bit.
 
-### HTML
+### D. HTML
 
 We've been changing HTML for this webpage.  HTML codes the content and structure of a webpage.
 
 
-# Style
+# II. Style
 
-### Header color
+### A. Header color
 
 1. Right click on where your school name was and choose "Inpect Element" again or navigate to that part of the code.
 2. Look to the right for code that says
@@ -75,7 +77,7 @@ We've been changing HTML for this webpage.  HTML codes the content and structure
 with a color box next to it.
 3. Click on the color box, and a color selector will pop up.  Pick any color you'd like.
 
-### Change the big header background color
+### B. Change the big header background color
 
 1. Right click on the side of the golden header.
 
@@ -96,84 +98,103 @@ inside the brackets.
 6. Go to the color box for the background-color on the right and change the color.
 
 
+### C. Rotate something
 
-
-
-### Rotate a picture
-
-1. Click on a picture.
-2. Right click on the picture and choose "Inspect Element."
+1. Right click on "Houston East End's School of Choice since 1926."
 3. Look to the right for the code that says
 
         element.style {
-            background-image: url(http://photos-d.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10958626_808888062520027_914160921_n.jpg);
+            color: rgb(255, 255, 255);
         }
 4. Click on the second } and add
 
-        -webkit-transform: rotate(120deg);
+        -webkit-transform: rotate(20deg);
 5. Experiment with the number of degrees.
 
-### Background image
-1. Right click on the phone and "Inspect Element."
-2. Look to the right for the code:
 
-        .page-home .home-phones{
-            background: url(//instagramstatic-a.akamaihd.net/bluebar/c4b4b0a/images/homepage/home-phones.png) no-repeat 0 80px;
-            ...
-3. Click on the checkbox next to ```background:...``` to uncheck it.
-
-### Fading images
-1. Right click and "Inspect Element" on the changing images.
-2. We can now see the code. How are the images transitioning like a slide show?
-
-### CSS
+### D. CSS
 We just got to play around with how content looks in a webpage.  This is called, the 'style' and is often coded by something called CSS.
 
-# More Control
 
-### Deleting the phone pictures
-1. Make sure the code
+# III. More Control
 
-        <div id="iphone-overlay">
-is selected.
-2. Press "Delete".
+On the tabs in the left box, click on the one that says "Console."  This is where we can write some JavaScript to interact with the page.
 
-### Hiding the phone pictures
-1. Refresh the page.
-2. Click on the "Console" tab where the code is.
-3. Type
-
-        $('#iphone-overlay').hide();
-and press ```Enter``` to run the code!
-4. Type
-
-        $('#iphone-overlay').show();
-and press ```Enter```.
-
-### Adding borders on everything
+### A. Adding borders on everything
 1. Type
 
         $('*').css({border: '1px solid #000'});
 and press ```Enter```.
 
-### Animating and moving the pictures
-1. Try
+### B. Changing the images
+1. Type 
 
-        $('#iphone-overlay').animate({marginLeft: '500px'}, 1000);
+        $('.rotating-images');
 and press ```Enter```.
 
-2. And
+You will see some HTML code!
 
-        $('#iphone-overlay').animate({marginLeft: '0px'}, 1000);
-3. Let's move each picture
+2. Type
+        $('.rotating-images img');
+and press ```Enter```.
 
-        var images = $('#iphone-overlay img');
-        for ( count = 0; count < images.length; count ++ ){
-            $(images[count]).animate( { marginLeft: count*100 }, 1000 * count);
-        }
+These are all the images in the gallery.
 
-### JavaScript
+3. Type
+        $('.rotating-images img').length;
+and press ```Enter```.
 
+This will tell you how many pictures are in the gallery.
+
+4. Put this code in the console:
+
+        var petPictureLinks = [
+            'http://i.imgur.com/lJMq1vL.jpg',
+            'http://doge2048.com/meta/doge-600.png',
+            'https://octodex.github.com/images/adventure-cat.png',
+            'http://i.huffpost.com/gen/2364914/thumbs/o-GRUMPY-CAT-facebook.jpg',
+            'https://octodex.github.com/images/baracktocat.jpg',
+            'http://www.boothedog.net/wp-content/uploads/2011/07/Boo-the-dog-Hungry.jpg',
+            'http://goo.gl/PBUw2X'
+        ];
+
+        $('.rotating-images img').each(function(iteration, imageElement){
+            $(imageElement).attr('src', petPictureLinks[iteration]);
+            console.log('What is the iteration?', iteration);
+            console.log('What is the element?', imageElement);
+            console.log('Where is the pet picture from?', petPictureLinks[iteration]);
+        });
+
+
+### C. Rotating things
+1. Put this code in your console:
+
+        var rotation = 0;
+
+        jQuery.fn.rotate = function(degrees) {
+            $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+                         '-moz-transform' : 'rotate('+ degrees +'deg)',
+                         '-ms-transform' : 'rotate('+ degrees +'deg)',
+                         'transform' : 'rotate('+ degrees +'deg)'});
+            return $(this);
+        };
+
+        var rotateStarburstInterval = setInterval(function(){
+            rotation += 5;
+            $('#gb-starburst').rotate(rotation);
+        }, 100);
+
+2. Rotate the logo like so:
+
+        var logoRotation = 0;
+
+        var rotateLogoInterval = setInterval(function(){
+            logoRotation += 5;
+            $('#gb-logo').rotate(logoRotation);
+        }, 10);
+
+
+### D. JavaScript
 We were able to manipulate things on our page using a language called JavaScript.  In this case, we use something called jQuery to help us select different parts of our page and change them.
 
 
