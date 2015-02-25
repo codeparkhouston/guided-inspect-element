@@ -130,21 +130,21 @@ and press ```Enter```.
 1. Type 
 
         $('.rotating-images');
-and press ```Enter```.
+    and press ```Enter```.
 
-You will see some HTML code!
+    You will see some HTML code!
 
 2. Type
         $('.rotating-images img');
-and press ```Enter```.
+    and press ```Enter```.
 
-These are all the images in the gallery.
+    These are all the images in the gallery.
 
 3. Type
         $('.rotating-images img').length;
-and press ```Enter```.
+    and press ```Enter```.
 
-This will tell you how many pictures are in the gallery.
+    This will tell you how many pictures are in the gallery.
 
 4. Put this code in the console:
 
