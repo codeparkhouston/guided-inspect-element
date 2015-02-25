@@ -1,57 +1,87 @@
-# Peaking into the code
+# Peeking into the code
 
-Sometimes it really helps to open something up to see what's going on.  The "Inspect Element" tool let's us do just that for webpages!  It's like opening the hood of a car, working backwards on a math problem, or reading a recipe for grandma's chicken soup.
+Sometimes it really helps to open something up to see what's going on.  The "Inspect Element" tool lets us do just that for webpages!  It's like opening the hood of a car, working backwards on a math problem, or reading a recipe for your favorite dessert.
 
-**Let's try it on Instagram.**
+**Let's try it on your school's webpage!**
 
-I'm behind the times a bit so I don't use Instagram all that much, but I sure like looking at pictures of [dogs](http://instagram.com/mensweardog/).
+Go to: [http://www.houstonisd.org/Domain/22556](http://www.houstonisd.org/Domain/22556)
 
-Let's see what we can do.
+# I. Content
 
-# Content
+The code we are changing in the section will be in the box on the left.
 
-### Change the username
+### Change the name of your school!
 
-1. Right click on the username "mensweardog"
+1. Right click on "Charles H. Milby High School" at the top.
 2. Choose "Inspect Element" from the menu.  A window with code will show on the bottom or on the side.
-3. The highlighted line is the code for the username.  Change the text that says "mensweardog" to anything you want!
-
-### Change the number of followers
-
-1. Follow the same steps as above for the number of followers.
-2. Try it for any of the other text on the page, for example the text on the "Follow" button.
+3. The highlighted line is the code for the heading.  Change the text that says "Charles H. Milby High School" to anything you want!
 
 
 ### Move the header around
 
-1. Right click on the side of the blue header up top.
+1. Right click on the side of the gold header up top.
 2. Choose "Inspect Element" from the menu as before.  The code for this header will be highlighted.
-3. Click and drag this code to some other place in the code.
+3. Click and drag this code to some other place in the code, such as after:
+
+        <div id="hp-page-outer"></div>
+
+
+### Change the slider picture
+
+1. Right click on the picture in the center.
+2. This will highlight code that says:
+
+        <a class="image-overlay"></a>
+
+3. Go up 3 lines to:
+
+        <div class="rotating-images"></div>
+
+4. Click on the arrow on the left next to this line.  This will open up the code for this section.
+
+5. Click on the arrow on the left next to this next line as well:
+
+        <ul class="pictures"></ul>
+
+6. We now get to see the code for the picture "gallery".  If we wait, we'll see the code updating!  How are the images fading in and out?
+
+7. Open up the code in:
+
+        <li class="active" index="0" style="...">...</li>
+
+8. Open up the code in:
+
+        <a class="imgHolder" target="_self" href="#" index="0"></a>
+
+9. Double-click on ```img src``` and change out the link in src="" to: [http://goo.gl/q01YFQ](http://goo.gl/q01YFQ).
+
+Phew. That was quite a bit of effort.  We'll see how to do this way quicker in a bit.
 
 ### HTML
 
-We've been changing HTML for this Instagram page.  HTML codes the content and structure of a webpage.
+We've been changing HTML for this webpage.  HTML codes the content and structure of a webpage.
+
 
 # Style
 
-### Username color
+### Header color
 
-1. Right click on the username and choose "Inpect Element" again or navigate to that part of the code.
-2. Look to the right for code that says
-
-        .upuiUsername, .upuiUsername a, .upuiUsername a:visited {
-            color: #111;
-        }
-with a color box next to it.
-3. Click on the color box, and a color selector will pop up.  Pick any color you like.
-
-### Change the big header background color
-
-1. Right click on the dark gray part of the header.
-
+1. Right click on where your school name was and choose "Inpect Element" again or navigate to that part of the code.
 2. Look to the right for code that says
 
         element.style {
+            color: rgb(255, 255, 255);
+        }
+with a color box next to it.
+3. Click on the color box, and a color selector will pop up.  Pick any color you'd like.
+
+### Change the big header background color
+
+1. Right click on the side of the golden header.
+
+2. Look to the right for code that says
+        element.style {
+            background-color: rgb(180, 108, 0);
         }
 3. Add
 
@@ -59,6 +89,15 @@ with a color box next to it.
 inside the brackets.
 
 4. The background is now crazy.  Click on the color boxes for the red and blue and change them to your liking.
+
+5. For extra effect, click on the HTML line of code that says:
+
+        <div id="gb-top-bg" style="background-color: rgb(0, 51, 102);"></div>
+6. Go to the color box for the background-color on the right and change the color.
+
+
+
+
 
 ### Rotate a picture
 
@@ -138,6 +177,6 @@ and press ```Enter```.
 We were able to manipulate things on our page using a language called JavaScript.  In this case, we use something called jQuery to help us select different parts of our page and change them.
 
 
-# Inspiration
+# Want to learn more?
 
-For examples of cool things and the code that made them, check out http://codepen.io/.
+Join us! Tell your teacher if you're interested in more info.
