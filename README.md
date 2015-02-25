@@ -31,17 +31,17 @@ The code we are changing in the section will be in the box on the left.
 1. Right click on the picture in the center.
 2. This will highlight code that says:
 
-       <a class="image-overlay"></a>
+        <a class="image-overlay"></a>
 
 3. Go up 3 lines to:
 
-      <div class="rotating-images"></div>
+        <div class="rotating-images"></div>
 
 4. Click on the arrow on the left next to this line.  This will open up the code for this section.
 
 5. Click on the arrow on the left next to this next line as well:
 
-       <ul class="pictures"></ul>
+        <ul class="pictures"></ul>
 
 6. We now get to see the code for the picture "gallery".  If we wait, we'll see the code updating!  How are the images fading in and out?
 
@@ -64,7 +64,7 @@ We've been changing HTML for this webpage.  HTML codes the content and structure
 
 # Style
 
-### Username color
+### Header color
 
 1. Right click on where your school name was and choose "Inpect Element" again or navigate to that part of the code.
 2. Look to the right for code that says
@@ -80,9 +80,9 @@ with a color box next to it.
 1. Right click on the side of the golden header.
 
 2. Look to the right for code that says
-    element.style {
-        background-color: rgb(180, 108, 0);
-    }
+        element.style {
+            background-color: rgb(180, 108, 0);
+        }
 3. Add
 
         background: linear-gradient(red,blue);
