@@ -97,8 +97,6 @@ inside the brackets.
 
 
 
-
-
 ### Rotate a picture
 
 1. Click on a picture.
@@ -113,18 +111,7 @@ inside the brackets.
         -webkit-transform: rotate(120deg);
 5. Experiment with the number of degrees.
 
-### Background image
-1. Right click on the phone and "Inspect Element."
-2. Look to the right for the code:
 
-        .page-home .home-phones{
-            background: url(//instagramstatic-a.akamaihd.net/bluebar/c4b4b0a/images/homepage/home-phones.png) no-repeat 0 80px;
-            ...
-3. Click on the checkbox next to ```background:...``` to uncheck it.
-
-### Fading images
-1. Right click and "Inspect Element" on the changing images.
-2. We can now see the code. How are the images transitioning like a slide show?
 
 ### CSS
 We just got to play around with how content looks in a webpage.  This is called, the 'style' and is often coded by something called CSS.
