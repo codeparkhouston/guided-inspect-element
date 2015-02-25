@@ -1,6 +1,6 @@
-# Peaking into the code
+# Peeking into the code
 
-Sometimes it really helps to open something up to see what's going on.  The "Inspect Element" tool let's us do just that for webpages!  It's like opening the hood of a car, working backwards on a math problem, or reading a recipe for grandma's chicken soup.
+Sometimes it really helps to open something up to see what's going on.  The "Inspect Element" tool lets us do just that for webpages!  It's like opening the hood of a car, working backwards on a math problem, or reading a recipe for your favorite dessert.
 
 **Let's try it on your school's webpage!**
 
@@ -177,6 +177,6 @@ and press ```Enter```.
 We were able to manipulate things on our page using a language called JavaScript.  In this case, we use something called jQuery to help us select different parts of our page and change them.
 
 
-# Inspiration
+# Want to learn more?
 
-For examples of cool things and the code that made them, check out http://codepen.io/.
+Join us! Tell your teacher if you're interested in more info.
