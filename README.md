@@ -148,7 +148,9 @@ and press ```Enter```.
 
     This will tell you how many pictures are in the gallery.
 
-4. Put this code in the console:
+4. Copy and paste the code from [http://goo.gl/O5oNG3](http://goo.gl/O5oNG3) into the console.
+
+    The code is similar to this:
 
         var petPictureLinks = [
             'http://i.imgur.com/lJMq1vL.jpg',
@@ -169,7 +171,9 @@ and press ```Enter```.
 
 
 ### C. Rotating things
-1. Put this code in your console:
+1. Copy and paste the code from [http://goo.gl/J7mfFD](http://goo.gl/J7mfFD) into the console.
+
+    This is the code;
 
         var rotation = 0;
 
@@ -186,7 +190,7 @@ and press ```Enter```.
             $('#gb-starburst').rotate(rotation);
         }, 100);
 
-2. Rotate the logo like so:
+2. Rotate the logo like so [http://goo.gl/I56Z3O](http://goo.gl/I56Z3O):
 
         var logoRotation = 0;
 
