@@ -1,4 +1,4 @@
-You can also see this guide online at: [https://github.com/codeparkhouston/guided-inspect-element](https://github.com/codeparkhouston/guided-inspect-element)
+You can also see this guide online at: [http://bit.do/milby-demo](http://bit.do/milby-demo)
 
 # Peeking into the code
 
@@ -55,7 +55,7 @@ The code we are changing in the section will be in the box on the left.
 
         <a class="imgHolder" target="_self" href="#" index="0"></a>
 
-9. Double-click on ```img src``` and change out the link in src="" to: [http://goo.gl/q01YFQ](http://goo.gl/q01YFQ).
+9. Double-click on ```img src``` and change out the link in src="" to: [http://bit.do/milby-demo-picture](http://bit.do/milby-demo-picture).
 
 Phew. That was quite a bit of effort.  We'll see how to do this way quicker in a bit.
 
@@ -148,7 +148,7 @@ and press ```Enter```.
 
     This will tell you how many pictures are in the gallery.
 
-4. Copy and paste the code from [http://goo.gl/O5oNG3](http://goo.gl/O5oNG3) into the console.
+4. Copy and paste the code from [http://bit.do/milby-gallery](http://bit.do/milby-gallery) into the console.
 
     The code is similar to this:
 
@@ -171,7 +171,7 @@ and press ```Enter```.
 
 
 ### C. Rotating things
-1. Copy and paste the code from [http://goo.gl/J7mfFD](http://goo.gl/J7mfFD) into the console.
+1. Copy and paste the code from [http://bit.do/rotate-1](http://bit.do/rotate-1) into the console.
 
     This is the code;
 
@@ -190,7 +190,7 @@ and press ```Enter```.
             $('#gb-starburst').rotate(rotation);
         }, 100);
 
-2. Rotate the logo like so [http://goo.gl/I56Z3O](http://goo.gl/I56Z3O):
+2. Rotate the logo like so [http://bit.do/rotate-2](http://bit.do/rotate-2):
 
         var logoRotation = 0;
 
