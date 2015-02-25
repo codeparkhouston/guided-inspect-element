@@ -135,12 +135,14 @@ and press ```Enter```.
     You will see some HTML code!
 
 2. Type
+
         $('.rotating-images img');
     and press ```Enter```.
 
     These are all the images in the gallery.
 
 3. Type
+
         $('.rotating-images img').length;
     and press ```Enter```.
 
