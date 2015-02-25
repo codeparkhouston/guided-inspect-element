@@ -174,7 +174,7 @@ and press ```Enter```.
 
 ### JavaScript
 
-We were able to manipulate things on our page using a language called JavaScript.  In this case, we use something called jQuery to help us select different parts of our page and change them.
+We were able to control and change these things on our page using a language called JavaScript.  In this case, we used something called jQuery to help us select different parts of our page and change them.
 
 
 # Want to learn more?
