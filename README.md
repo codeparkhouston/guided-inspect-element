@@ -19,16 +19,7 @@ The code we are changing in the section will be in the box on the left.
 3. The highlighted line is the code for the heading.  Change the text that says "Charles H. Milby High School" to anything you want!
 
 
-### B. Move the header around
-
-1. Right click on the side of the gold header up top.
-2. Choose "Inspect Element" from the menu as before.  The code for this header will be highlighted.
-3. Click and drag this code to some other place in the code, such as after:
-
-        <div id="hp-page-outer"></div>
-
-
-### C. Change the slider picture
+### B. Change the logo
 
 1. Right click on the Milby Buffalo logo.
 2. This will highlight code that says:
@@ -37,7 +28,7 @@ The code we are changing in the section will be in the box on the left.
 
 3. See this code: ```src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png"```.  Double-click on this and change it to: ```src="http://bit.do/milby-demo-picture" width="100px"```.
 
-### D. HTML
+### C. HTML
 
 We've been changing HTML for this webpage.  HTML codes the content and structure of a webpage.
 
