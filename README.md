@@ -26,7 +26,13 @@ The code we are changing in the section will be in the box on the left.
 
         <img alt="milby" title="milby" src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png">
 
-3. See this code: ```src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png"```.  Double-click on this and change it to: ```src="http://bit.do/milby-demo-picture" width="100px"```.
+3. See this code:
+
+        src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png"
+
+    Double-click on this and change it to:
+
+        src="http://bit.do/milby-demo-picture" width="100px"
 
 ### C. HTML
 
