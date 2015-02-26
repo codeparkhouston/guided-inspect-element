@@ -30,34 +30,12 @@ The code we are changing in the section will be in the box on the left.
 
 ### C. Change the slider picture
 
-1. Right click on the picture in the center.
+1. Right click on the Milby Buffalo logo.
 2. This will highlight code that says:
 
-        <a class="image-overlay"></a>
+        <img alt="milby" title="milby" src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png">
 
-3. Go up 3 lines to:
-
-        <div class="rotating-images"></div>
-
-4. Click on the arrow on the left next to this line.  This will open up the code for this section.
-
-5. Click on the arrow on the left next to this next line as well:
-
-        <ul class="pictures"></ul>
-
-6. We now get to see the code for the picture "gallery".  If we wait, we'll see the code updating!  How are the images fading in and out?
-
-7. Open up the code in:
-
-        <li class="active" index="0" style="...">...</li>
-
-8. Open up the code in:
-
-        <a class="imgHolder" target="_self" href="#" index="0"></a>
-
-9. Double-click on ```img src``` and change out the link in src="" to: [http://bit.do/milby-demo-picture](http://bit.do/milby-demo-picture).
-
-Phew. That was quite a bit of effort.  We'll see how to do this way quicker in a bit.
+3. See this code: ```src="http://www.houstonisd.org/cms/lib2/tx01001591/centricity/template/43/logos/milby.png"```.  Double-click on this and change it to: ```src="http://bit.do/milby-demo-picture" width="100px"```.
 
 ### D. HTML
 
@@ -106,10 +84,12 @@ inside the brackets.
         element.style {
             color: rgb(255, 255, 255);
         }
-4. Click on the second } and add
+4. Click on the ```}``.  This will att a new line to the code.  Type:
 
         -webkit-transform: rotate(20deg);
-5. Experiment with the number of degrees.
+5. Experiment with the number of degrees.  For example, change the code to:
+
+        -webkit-transform: rotate(200deg);
 
 
 ### D. CSS
@@ -149,8 +129,6 @@ and press ```Enter```.
     This will tell you how many pictures are in the gallery.
 
 4. Copy and paste the code from [http://bit.do/milby-gallery](http://bit.do/milby-gallery) into the console.
-
-    The code is similar to this:
 
         var petPictureLinks = [
             'http://i.imgur.com/lJMq1vL.jpg',
